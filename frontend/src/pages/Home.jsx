@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "../components/Spinner";
 import { Link } from "react-router-dom";
-import { MdOutlineAddBox } from "react-icons/md";
 
 const Home = () => {
-  const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showType, setShowType] = useState("table");
 
   useEffect(() => {
     setLoading(true);
@@ -25,6 +21,7 @@ const Home = () => {
 
   return (
    <div>
+    <header>
        <div className="container mx-auto flex items-center justify-between">
       <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4 py-4">Boxers Hub</h1>
       <div className="flex space-x-4">
@@ -34,11 +31,12 @@ const Home = () => {
         <a href="#about" className="text-lg text-blue-400 hover:text-blue-700">
           About
         </a>
-        <a href="#contact" className="text-lg text-blue-400 hover:text-blue-700">
+        <Link to="/contact" className="text-lg text-blue-400 hover:text-blue-700">
           Contact
-        </a>
+        </Link>
       </div>
     </div>
+    </header>
     <div>
      <h1 className="text-center text-5xl py-3">Boxing Mania</h1>
      <p className="text-center px-4 py-4">Welcome to Boxing World, your ultimate destination for mastering the art of boxing. 
@@ -52,6 +50,7 @@ const Home = () => {
       <h1 className="text-center py-4">LET'S BEGIN</h1>
     </div>  
     <div>
+
 
     </div>
     
