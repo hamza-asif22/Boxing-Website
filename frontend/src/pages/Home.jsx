@@ -25,8 +25,22 @@ const Home = () => {
 
   return (
    <div>
+       <div className="container mx-auto flex items-center justify-between">
+      <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4 py-4">Boxers Hub</h1>
+      <div className="flex space-x-4">
+        <a href="#work-section" className="text-lg text-blue-400 hover:text-blue-700">
+          Profile
+        </a>
+        <a href="#about" className="text-lg text-blue-400 hover:text-blue-700">
+          About
+        </a>
+        <a href="#contact" className="text-lg text-blue-400 hover:text-blue-700">
+          Contact
+        </a>
+      </div>
+    </div>
     <div>
-     <h1 className="text-center text-5xl">Boxing Mania</h1>
+     <h1 className="text-center text-5xl py-3">Boxing Mania</h1>
      <p className="text-center px-4 py-4">Welcome to Boxing World, your ultimate destination for mastering the art of boxing. 
       Whether you're a beginner looking to start your journey or a seasoned fighter aiming 
       to hone your skills, we provide the resources and support you need to achieve your 
