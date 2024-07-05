@@ -2,14 +2,24 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className='bg-gray-200 min-h-screen'>
-        <div className='text-center'>
-          <h1 className='text-5xl py-6'>Boxers Hub</h1>
-        </div>
-        <div>
-          
-        </div>
+<div className=' min-h-screen'>
+  <div className="bg-cover bg-center h-screen" style={{ backgroundImage: `url('/media/b2.jpg')` }}>
+  <div className='text-center'>
+    <h1 className='text-5xl text-white py-6'>Boxers Hub</h1>
+  </div>
+
+    <div>
+      
     </div>
+
+
+
+
+
+
+  </div>
+</div>
+
   );
 };
 
