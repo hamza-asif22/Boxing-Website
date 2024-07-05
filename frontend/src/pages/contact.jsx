@@ -10,18 +10,20 @@ const Contact = () => {
 
         <div className="flex justify-center space-x-6 mt-8">
           {/* Card 1 */}
-          <div className="relative bg-white rounded-lg shadow-lg p-6 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-            <h2 className="text-xl font-bold text-gray-800">Email</h2>
+          <div className="relative bg-white rounded-lg shadow-lg p-6 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <h2 className="text-2xl font-bold text-gray-800">Contact Info</h2>
+            <h2 className='text-xl '>Email</h2>
             <p className="text-lg text-gray-600">info@boxershub.com</p>
+
+            <h2 className="text-xl">Contact Number</h2>
+            <p className="text-lg text-gray-600">+1 123-456-7890</p>
           </div>
 
           {/* Card 2 */}
-          <div className="relative bg-white rounded-lg shadow-lg p-6 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-            <h2 className="text-xl font-bold text-gray-800">Contact Number</h2>
-            <p className="text-lg text-gray-600">+1 123-456-7890</p>
+          <div className="relative bg-white rounded-lg shadow-lg p-6 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            {/* Add content for the second card here if needed */}
           </div>
         </div>
-
       </div>
     </div>
   );
