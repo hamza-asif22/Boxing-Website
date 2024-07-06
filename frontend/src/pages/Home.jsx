@@ -16,12 +16,12 @@ const Home = () => {
       <div className="container mx-auto flex items-center justify-between py-4">
         <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">Boxers Hub</h1>
         <div className="flex-1 flex justify-center space-x-14">
-          <a href="#work-section" className="text-lg text-blue-400 hover:text-blue-700">
+          <Link to="/profile" className="text-lg text-blue-400 hover:text-blue-700">
             Profile
-          </a>
-          <a href="#Pricing" className="text-lg text-blue-400 hover:text-blue-700">
+          </Link>
+          <Link to="/pricing" className="text-lg text-blue-400 hover:text-blue-700">
             Pricing
-          </a>
+          </Link>
           <Link to="/contact" className="text-lg text-blue-400 hover:text-blue-700">
             Contact Us
           </Link>
