@@ -46,6 +46,50 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <footer className="bg-gray-900 text-white">
+        <div className="container mx-auto py-8 px-4">
+          <div className="flex justify-center mb-8">
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-google-plus"></i>
+            </a>
+            <a href="#" className="text-white mx-2">
+              <i className="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div className="flex justify-center mb-4">
+            <ul className="flex">
+              <li className="mx-4">
+                <a href="#" className="text-white">
+                  News
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className="text-white">
+                  About
+                </a>
+              </li>
+              <li className="mx-4">
+                <a href="#" className="text-white">
+                  Our Team
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="text-center py-4">
+          © 2023 Boxing Mania. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 };
