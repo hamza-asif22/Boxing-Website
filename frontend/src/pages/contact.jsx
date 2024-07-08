@@ -1,26 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
       <div className="bg-cover bg-center h-screen flex flex-col items-center justify-center" style={{ backgroundImage: `url('/media/b2.jpg')` }}>
         <div className="text-center">
-          <h1 className="text-5xl text-white py-6">Boxers Hub</h1>
+          <Link to="/Home">
+            <h1 className="text-5xl text-white py-6">Boxers Hub</h1>
+          </Link>
         </div>
 
         <div className="flex justify-center space-x-6 mt-8">
           {/* Contact Info Card */}
           <div className="relative bg-white rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <h2 className="text-2xl font-bold text-gray-800 text-center">Contact Info</h2>
-            <h2 className="text-xl font-bold">Email</h2>
-            <a href='mailro:info@boxerhub.com' className="text-lg text-gray-600 hover:underline">info@boxershub.com</a>
+            <h2 className="text-xl font-bold mt-4">Email</h2>
+            <a href='mailto:info@boxershub.com' className="text-lg text-gray-600 hover:underline">info@boxershub.com</a>
 
-            <h2 className="text-xl font-bold">Contact Number</h2>
+            <h2 className="text-xl font-bold mt-4">Contact Number</h2>
             <a href='tel:+11234567890' className="text-lg text-gray-600 hover:underline">+1 123-456-7890</a>
           </div>
 
           {/* Contact Form Card */}
-          <div className="relative bg-white rounded-lg shadow-lg p-6 w-88 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div className="relative bg-white rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <form action="https://formspree.io/f/xayrwedb" method="POST">
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
