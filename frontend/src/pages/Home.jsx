@@ -39,12 +39,6 @@ const Home = () => {
               >
                 Contact Us
               </Link>
-              <a
-                href="#about"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                About Us
-              </a>
             </div>
           </div>
         </header>
