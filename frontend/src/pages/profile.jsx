@@ -2,7 +2,9 @@ import React from 'react'
 
 const profile = () => {
   return (
-    <div>profile</div>
+    <div>
+      <h1></h1>
+    </div>
   )
 }
 
