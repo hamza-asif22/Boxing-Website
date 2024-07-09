@@ -39,12 +39,6 @@ const Home = () => {
               >
                 Contact Us
               </Link>
-              <a
-                href="#about"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                About Us
-              </a>
             </div>
           </div>
         </header>
@@ -130,22 +124,22 @@ const Home = () => {
 
       <footer className="bg-gray-900 text-white">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <div className="container mx-auto py-8 px-4">
-          <div className="flex justify-center mb-8">
+        <div className=" mx-auto py-8 px-4">
+        <div className="flex justify-center mb-8">
             <a href="#" className="text-white mx-2">
-              <i className="fab fa-facebook"></i>
+              <i className="fab fa-facebook text-white text-2xl"></i>
             </a>
             <a href="#" className="text-white mx-2">
-              <i className="fab fa-instagram"></i>
+              <i className="fab fa-instagram text-white text-2xl"></i>
             </a>
             <a href="#" className="text-white mx-2">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-twitter text-white text-2xl"></i>
             </a>
             <a href="#" className="text-white mx-2">
-              <i className="fab fa-google-plus"></i>
+              <i className="fab fa-google-plus text-white text-2xl"></i>
             </a>
             <a href="#" className="text-white mx-2">
-              <i className="fab fa-youtube"></i>
+              <i className="fab fa-youtube text-white text-2xl"></i>
             </a>
           </div>
           <div className="flex justify-center mb-4">
