@@ -1,6 +1,5 @@
 import { AiOutlineClose } from 'react-icons/ai';
-import { PiBookOpenTextLight } from 'react-icons/pi';
-import { BiUserCircle } from 'react-icons/bi';
+
 
 const BookModal = ({ book, onClose }) => {
   return (
@@ -13,32 +12,29 @@ const BookModal = ({ book, onClose }) => {
         className='w-[600px] max-w-full h-[400px] backdrop-blur-xl bg-white/50 rounded-xl p-4 flex flex-col relative'
       >
         <AiOutlineClose
-          className='absolute right-6 top-6 text-3xl text-red-600 cursor-pointer'
+          className='absolute right-6 top-6 text-3xl text-gray-700 cursor-pointer'
           onClick={onClose}
         />
-        <h2 className='w-fit px-4 py-1 bg-red-300 rounded-lg'>
-          {book.publishYear}
-        </h2>
-        <h4 className='my-2 text-gray-500'>{book._id}</h4>
         <div className='flex justify-start items-center gap-x-2'>
-          <PiBookOpenTextLight className='text-red-300 text-2xl' />
-          <h2 className='my-1'>{book.title}</h2>
+          <h2 className='my-1 font-bold'>{book.price}</h2>
         </div>
-        <div className='flex justify-start items-center gap-x-2'>
-          <BiUserCircle className='text-red-300 text-2xl' />
-          <h2 className='my-1'>{book.author}</h2>
-        </div>
-        <p className='mt-4'>Anything You want to show</p>
+        <p className='mt-4'></p>
         <p className='my-2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia
-          voluptatum sint. Nisi impedit libero eveniet cum vitae qui expedita
-          necessitatibus assumenda laboriosam, facilis iste cumque a pariatur
-          nesciunt cupiditate voluptas? Quis atque earum voluptate dolor nisi
-          dolorum est? Deserunt placeat cumque quo dicta architecto, dolore
-          vitae voluptate sequi repellat!
+        {book.priceplan}
         </p>
+        <div>
+        <ul className="text-base mb-2">
+          {book.payement.map((payement, index) => (
+            <li key={index}>
+              <span className="text-blue-500">&#8226;</span> {payement}
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+      <p className='text-center text-sm font-semibold'>For more queries and details you can contact our customer support. Available 24/7 for your service.</p>
+      </div>
+      
+    </div> 
   );
 };
 
