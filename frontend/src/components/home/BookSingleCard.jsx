@@ -19,7 +19,7 @@ const BookSingleCard = ({ book, type }) => {
   };
 
   return (
-    <div className="flex-shrink-0 backdrop-blur-md bg-white/30 max-w-xs border-2 border-gray-500 rounded-lg px-4 py-6 m-2 relative hover:shadow-xl transition duration-300">
+    <div className="flex-shrink-0 bg-white bg-opacity-50 max-w-xs border-2 border-black rounded-lg px-4 py-6 m-2 relative hover:shadow-xl transition duration-300 transform hover:-translate-y-0 hover:scale-105">
       <h2
         className={`absolute top-1 right-2 px-4 py-1 ${getTypeStyles(
           type
@@ -34,7 +34,7 @@ const BookSingleCard = ({ book, type }) => {
         <h2 className="my-1">{book.description}</h2>
       </div>
       <div>
-        <ul className="text-base mb-2">
+        <ul className="text-base mb-2 font-semibold">
           {book.features.map((feature, index) => (
             <li key={index}>
               <span className="text-blue-500">&#8226;</span> {feature}
@@ -43,7 +43,7 @@ const BookSingleCard = ({ book, type }) => {
         </ul>
       </div>
       <div className="flex justify-center items-center gap-x-2 mt-2">
-        <button className="backdrop-blur-md bg-white/0 rounded-lg px-4 py-2 hover:bg-gray-300 transition">
+        <button className="bg-gray-300 rounded-lg px-4 py-2 hover:bg-gray-400 transition">
           Get Started
         </button>
       </div>
