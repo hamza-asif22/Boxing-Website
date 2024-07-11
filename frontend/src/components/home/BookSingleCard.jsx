@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiShow } from "react-icons/bi";
 import BookModal from "./BookModal";
+import { Link } from "react-router-dom";
 
 const BookSingleCard = ({ book, type }) => {
   const [showModal, setShowModal] = useState(false);
@@ -34,6 +35,7 @@ const BookSingleCard = ({ book, type }) => {
         <h2 className="my-1">{book.description}</h2>
       </div>
       <div>
+        <h1 className='flex justify-center font-bold italic'>Key Features</h1>
         <ul className="text-base mb-2 font-semibold">
           {book.features.map((feature, index) => (
             <li key={index}>
@@ -43,9 +45,11 @@ const BookSingleCard = ({ book, type }) => {
         </ul>
       </div>
       <div className="flex justify-center items-center gap-x-2 mt-2">
-        <button className="bg-gray-300 rounded-lg px-4 py-2 hover:bg-gray-400 transition">
+        <Link to='/'>
+        <button className="bg-gray-300 rounded-lg px-4 py-2 hover:bg-gray-400 transition" type="submit">
           Get Started
         </button>
+        </Link>
       </div>
       <div className="flex justify-between items-center gap-x-2 mt-2">
         <div className="flex justify-start items-center gap-x-2">
@@ -60,7 +64,9 @@ const BookSingleCard = ({ book, type }) => {
       {showModal && (
         <BookModal book={book} onClose={() => setShowModal(false)} />
       )}
+      
     </div>
+    
   );
 };
 

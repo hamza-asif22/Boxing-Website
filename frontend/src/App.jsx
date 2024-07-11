@@ -9,6 +9,8 @@ import Swarmer from './pages/swarmer';
 import Slugger from './pages/slugger';
 import Outboxer from './pages/outboxer';
 import Boxerpunch from './pages/boxerpunch';
+import Login from './pages/login';
+import Signup from './pages/signup';
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
         <Route path="/slugger" element={<Slugger />} />
         <Route path="/outboxer" element={<Outboxer />} />
         <Route path="/boxerpunch" element={<Boxerpunch />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
   );
 };
