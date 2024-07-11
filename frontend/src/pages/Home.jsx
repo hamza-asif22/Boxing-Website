@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Simulate a loading time of 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="loader mb-4"></div>
+          <p className="text-xl font-bold text-blue-500">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <section className="relative h-screen overflow-hidden">
@@ -16,13 +37,13 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
         <header className="absolute top-0 left-0 w-full z-20">
-          <div className="container mx-auto flex items-center justify-between py-4">
+          <div className=" mx-auto flex items-center justify-between py-4">
             <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
               Boxers Hub
             </h1>
-            <div className="flex-1 flex justify-center space-x-14">
+            <div className="flex-1 flex justify-end space-x-10 pr-5">
               <Link
-                to="/profile"
+                to="/login"
                 className="text-lg text-blue-400 hover:text-blue-700"
               >
                 Profile
@@ -123,9 +144,15 @@ const Home = () => {
       </section>
 
       <footer className="bg-gray-900 text-white">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
         <div className=" mx-auto py-8 px-4">
-        <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8">
             <a href="#" className="text-white mx-2">
               <i className="fab fa-facebook text-white text-2xl"></i>
             </a>

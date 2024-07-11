@@ -13,7 +13,7 @@ const Contact = () => {
 
         <div className="flex justify-center space-x-6 mt-8">
           {/* Contact Info Card */}
-          <div className="relative bg-white rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div className="relative bg-white bg-opacity-50 max-w-xs rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <h2 className="text-2xl font-bold text-gray-800 text-center">Contact Info</h2>
             <h2 className="text-xl font-bold mt-4">Email</h2>
             <a href='mailto:info@boxershub.com' className="text-lg text-gray-600 hover:underline">info@boxershub.com</a>
@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form Card */}
-          <div className="relative bg-white rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-200 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div className="relative bg-white bg-opacity-50 max-w-xs rounded-lg shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <form action="https://formspree.io/f/xayrwedb" method="POST">
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
