@@ -172,9 +172,9 @@ const Home = () => {
           <div className="flex justify-center mb-4">
             <ul className="flex">
               <li className="mx-4">
-                <a href="#" className="text-white">
-                  News
-                </a>
+                <Link to="/footer/news">
+                  <p>News</p>
+                </Link>
               </li>
               <li className="mx-4">
                 <a href="#" className="text-white">
