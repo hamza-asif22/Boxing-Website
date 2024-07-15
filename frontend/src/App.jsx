@@ -11,6 +11,7 @@ import Outboxer from './pages/outboxer';
 import Boxerpunch from './pages/boxerpunch';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import News from './pages/footer/news';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/boxerpunch" element={<Boxerpunch />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        { <Route path="/footer/news" element={<News />} /> }
       </Routes>
   );
 };
