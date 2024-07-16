@@ -3,12 +3,12 @@ import React from "react";
 const Swarmer = () => {
   return (
     <div 
-      className="min-h-screen font-thin flex items-center justify-center bg-cover bg-no-repeat bg-center text-white" 
+      className="min-h-screen font-thin flex items-center justify-center bg-cover bg-no-repeat bg-center" 
       style={{ backgroundImage: "url('/media/b7.jpg')" }}
     >
       <div>
         <h1 className="text-center font-serif font-bold text-2xl py-4">Swarmer</h1>
-        <p className="text-center justify-between ">
+        <p className="text-center justify-between text-red-300">
           A fighter should enter the ring with an overall strategy and specific
           tactics to make that strategy happen. How you box in the ring, though,
           doesn’t just begin from a blank slate. You have to understand fighting
