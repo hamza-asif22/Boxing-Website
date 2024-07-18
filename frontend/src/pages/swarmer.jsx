@@ -78,11 +78,11 @@ const Swarmer = () => {
             <p className="col-span-3 text-2xl text-black mt-4">
               This type of fighter will also tend to throw a variety of punches
               in order to circumvent an opponent’s defenses. This style places a
-              premium on good footwork. A Close-In fighter wants to place
+              premium on <u>good footwork</u>. A Close-In fighter wants to place
               pressure on an opponent. They will advance constantly, shifting to
               the left or right to cut off escape, and shifting back to throw
               off counters. The close-in fighter requires solid footwork (and
-              top-level stamina) to move inside the reach of an opponent,
+              <u>top-level stamina</u>) to move inside the reach of an opponent,
               deliver a series of blows, and step out of danger.<br /><br /> The Pressure
               Fighter also has to be more than just comfortable with the clinch.
               This fighter has to know how to use the clinch tactically to
@@ -104,7 +104,7 @@ const Swarmer = () => {
 
             <p className="text-center text-2xl lg:text-left text-black col-span-2">
               There are a number of reasons that a fighter might choose the
-              close-in style. Negate Height Advantages – Shorter boxers often
+              close-in style. <b>Negate Height Advantages</b> – Shorter boxers often
               choose this style because it can negate the reach advantage of
               taller, longer-limbed opponents.
             </p>
@@ -113,8 +113,8 @@ const Swarmer = () => {
               from a distance and then dancing away. Because the Swarmer seeks
               to get inside an opponent’s range, they can eliminate this
               advantage. At close-range, a taller boxer can’t punch as
-              effectively, and may also have difficulty defending.<br /><br /> Control the
-              Fight – More than any other style, the Pressure style focuses on
+              effectively, and may also have difficulty defending.<br /><br /> <b>Control the
+              Fight</b> – More than any other style, the Pressure style focuses on
               creating openings, rather than waiting for openings to appear. A
               Swarmer’s aggressive style also tends to force opponents into a
               reaction mindset. Rather than operate according to their own
@@ -124,8 +124,8 @@ const Swarmer = () => {
               use the clinch to control the fight. The Swarmer will enter a
               clinch to alter the speed and rhythm of an opponent. They might
               also clinch to physically alter the positions of both fighters
-              relative to each other and the ring.<br /><br /> Overwhelm Defensive & Outside
-              Fighters – Defensive fighters and fighters that prefer to fight
+              relative to each other and the ring.<br /><br /> <b>Overwhelm Defensive & Outside
+              Fighters</b> – Defensive fighters and fighters that prefer to fight
               outside can be overwhelmed by this style. A defensive boxer may
               face difficulty setting up counters if they are under a constant
               barrage (or pinned down against the ropes).<br /><br /> Likewise, an outside
