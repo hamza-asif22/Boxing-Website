@@ -41,7 +41,7 @@ const slugger = () => {
       </header>
       <div className="max-w-4xl mx-auto py-4">
         <h1 className="text-center font-serif font-bold italic text-2xl py-8">
-          Out-Boxer Boxing Style
+          Slugger Boxing Style
         </h1>
         <div className="grid lg:grid-cols-3 gap-8 mb-8">
           <img
