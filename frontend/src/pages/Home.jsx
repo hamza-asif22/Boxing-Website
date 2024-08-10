@@ -85,7 +85,7 @@ const Home = () => {
           </p>
           <div>
             <a href="#2page">
-            <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r  bg-transparent hover:bg-blue-300 relative rounded-3xl align-bottom ">
+            <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r  bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom ">
               Check Out The Website
               <img
                 src="/media/down-arr.gif"
@@ -98,7 +98,17 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="2page" className="bg-slate-200 bg-cover bg-center bg-no-repeat">
+      <section id="2page" className="bg-slate-300 bg-cover bg-center bg-no-repeat">
+
+      <div>
+        <h1 className="font-bold text-5xl px-9 py-8  text-center flex align-top justify-center">We are enhancing YOUR experience through our team's accomplishments</h1>
+
+
+      </div>
+
+      </section>
+
+      <section  className="bg-slate-200 bg-cover bg-center bg-no-repeat">
         <div className="h-4 rounded-t-lg"></div>
         <h1 className="text-5xl text-center font-semibold">
           Top 4 Boxing Styles in the World
