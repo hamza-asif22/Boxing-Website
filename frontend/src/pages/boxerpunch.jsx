@@ -6,7 +6,7 @@ const boxpunch = () => {
     <div                
       className="min-h-screen bg-teal-500 font-thin flex items-center justify-center text-black bg-cover bg-no-repeat bg-center"
       style={{
-        backgroundImage: `url('/media/a7.jpg')`,
+        backgroundImage: `url('/media/a8.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -14,25 +14,25 @@ const boxpunch = () => {
     >
       <header className="absolute top-0 left-0 w-full z-20">
         <div className=" mx-auto flex items-center justify-between py-4">
-          <h1 className="text-2xl font-semibold text-teal-800 hover:text-green-700 px-4">
+          <h1 className="text-2xl font-semibold text-blue-800 hover:text-blue-700 px-4">
             Boxers Hub
           </h1>
           <div className="flex-1 flex justify-end space-x-10 pr-5">
             <Link
               to="/login"
-              className="text-lg font-semibold text-teal-800 hover:text-green-700"
+              className="text-lg font-semibold text-blue-800 hover:text-blue-700"
             >
               Profile
             </Link>
             <Link
               to="/pricing"
-              className="text-lg font-semibold text-teal-800 hover:text-green-700"
+              className="text-lg font-semibold text-blue-800 hover:text-blue-700"
             >
               Pricing
             </Link>
             <Link
               to="/contact"
-              className="text-lg font-semibold text-teal-800 hover:text-green-700"
+              className="text-lg font-semibold text-blue-800 hover:text-blue-700"
             >
               Contact Us
             </Link>
