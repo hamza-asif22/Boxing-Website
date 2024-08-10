@@ -25,34 +25,43 @@ const Home = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div
+      className="min-h-screen bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/media/bg2.jpg')",
+        backgroundSize: "100% auto",
+      }}
+    >
       <section className="relative h-screen overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-        >
-          <source src="/media/v1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <header className="absolute top-0 left-0 w-full z-20">
+        <header className="absolute top-0 left-0 w-full z-20 text-white ">
           <div className=" mx-auto flex items-center justify-between py-4">
-            <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
+            <h1 className="text-2xl text-blue-500 font-semibold hover:text-blue-700 px-4 flex items-center">
+              <img
+                src="/media/boxing-ico.gif"
+                alt="Boxing Icon"
+                className="w-9 h-8 mr-2"
+              />
               Boxers Hub
             </h1>
+
             <div className="flex-1 flex justify-end space-x-10 pr-5">
               <Link
                 to="/login"
                 className="text-lg text-blue-400 hover:text-blue-700"
               >
-                Profile
+                Log In
               </Link>
               <Link
                 to="/pricing"
                 className="text-lg text-blue-400 hover:text-blue-700"
               >
-                Pricing
+                Training Program
+              </Link>
+              <Link
+                to="/trainers"
+                className="text-lg text-blue-400 hover:text-blue-700"
+              >
+                Trainers
               </Link>
               <Link
                 to="/contact"
@@ -63,30 +72,36 @@ const Home = () => {
             </div>
           </div>
         </header>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-50">
-          <h1 className="text-5xl py-2">Boxing Mania</h1>
-          <p className="px-4 py-4 max-w-5xl text-center">
-            Welcome to Boxing World, your ultimate destination for mastering the
-            art of boxing. Whether you're a beginner looking to start your
-            journey or a seasoned fighter aiming to hone your skills, we provide
-            the resources and support you need to achieve your goals. Our
-            platform offers expert training guides, tips from professional
-            boxers, and a community of enthusiasts to keep you motivated. Stay
-            updated with the latest news, upcoming events, and exclusive
-            interviews. Join us today and become an expert in the world of
-            boxing. Your path to greatness starts here!
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white ">
+          <h1 className="text-5xl py-4 font-bold mb-9">
+            Train Like a Champion
+          </h1>
+          <p className="px-4 py-6 max-w-5xl text-xl mb-9 text-center">
+            Unlock your potential with expert boxing training and elevate your
+            skills to new heights in the ring. Join a community of champions
+            dedicated to success and experience the support and motivation
+            needed to achieve your goals. With top-notch coaching and a
+            commitment to excellence, you're on the path to becoming your best.{" "}
           </p>
-          <h1 className="py-4">LET'S BEGIN</h1>
+          <div>
+            <a href="#2page">
+            <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r  bg-transparent hover:bg-blue-300 relative rounded-3xl align-bottom ">
+              Check Out The Website
+              <img
+                src="/media/down-arr.gif"
+                alt="Down Arrow"
+                className="w-7 h-6"
+              />
+            </button>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section
-        className="bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/media/b1.jpg')` }}
-      >
-        <div className="h-40 rounded-t-lg"></div>
-        <h1 className="text-xl text-center font-bold">
-          Learn Different Boxing Styles
+      <section id="2page" className="bg-slate-200 bg-cover bg-center bg-no-repeat">
+        <div className="h-4 rounded-t-lg"></div>
+        <h1 className="text-5xl text-center font-semibold">
+          Top 4 Boxing Styles in the World
         </h1>
         <div className="flex flex-wrap justify-center">
           <Link to="/swarmer">
@@ -156,38 +171,25 @@ const Home = () => {
             <a href="https://www.facebook.com/UFC/" className="text-white mx-2">
               <i className="fab fa-facebook text-white text-2xl"></i>
             </a>
-            <a href="https://www.instagram.com/espnmma?igsh=MXJ6Y202b3g0YmQ2Nw==" className="text-white mx-2">
+            <a
+              href="https://www.instagram.com/espnmma?igsh=MXJ6Y202b3g0YmQ2Nw=="
+              className="text-white mx-2"
+            >
               <i className="fab fa-instagram text-white text-2xl"></i>
             </a>
-            <a href="https://twitter.com/ufc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="text-white mx-2">
+            <a
+              href="https://twitter.com/ufc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              className="text-white mx-2"
+            >
               <i className="fab fa-twitter text-white text-2xl"></i>
             </a>
             <a href="https://www.youtube.com/@ufc" className="text-white mx-2">
               <i className="fab fa-youtube text-white text-2xl"></i>
             </a>
           </div>
-          <div className="flex justify-center mb-4">
-            <ul className="flex">
-              <li className="mx-4">
-                <Link to="/footer/news">
-                  <p>News</p>
-                </Link>
-              </li>
-              <li className="mx-4">
-                <a href="#" className="text-white">
-                  About
-                </a>
-              </li>
-              <li className="mx-4">
-                <a href="#" className="text-white">
-                  Our Team
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
         <p className="text-center py-4">
-          © 2023 Boxing Mania. All rights reserved.
+          © 2024 Boxing Mania. All rights reserved.
         </p>
       </footer>
     </div>
