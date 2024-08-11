@@ -74,7 +74,7 @@ const Home = () => {
         </header>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white ">
           <h1 className="text-5xl py-4 font-bold mb-9">
-            Train Like a Champion
+            <i>Train Like a Champion</i>
           </h1>
           <p className="px-4 py-6 max-w-5xl text-xl mb-9 text-center">
             Unlock your potential with expert boxing training and elevate your
@@ -85,30 +85,66 @@ const Home = () => {
           </p>
           <div>
             <a href="#2page">
-            <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r  bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom ">
-              Check Out The Website
-              <img
-                src="/media/down-arr.gif"
-                alt="Down Arrow"
-                className="w-7 h-6"
-              />
-            </button>
+              <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r  bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom ">
+                Check Out The Website
+                <img
+                  src="/media/down-arr.gif"
+                  alt="Down Arrow"
+                  className="w-7 h-6"
+                />
+              </button>
             </a>
           </div>
         </div>
       </section>
 
-      <section id="2page" className="bg-slate-300 bg-cover bg-center bg-no-repeat">
+      <section
+        id="2page"
+        className="bg-slate-300 bg-cover bg-center bg-no-repeat"
+      >
+        <div className="py-4 px-4 ">
+          <h1 className="font-bold text-5xl px-9 py-8 leading-tight  text-center flex align-top justify-center">
+            We are enhancing YOUR experience through our team's accomplishments
+          </h1>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-5 text-center">
+              {/* Card 1 */}
+              <div className="relative max-w-xs rounded-3xl shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 bg-transparent bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-[url('/media/bg3.jpg')] bg-cover bg-no-repeat group">
+                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">16</h1>
+                <div className="mt-16">
+                  <h1 className="text-3xl text-gray-700 font-semibold font-serif">
+                    World best Coaches and Ex Boxers are hired for our members.
+                  </h1>
+                </div>
+              </div>
 
-      <div>
-        <h1 className="font-bold text-5xl px-9 py-8  text-center flex align-top justify-center">We are enhancing YOUR experience through our team's accomplishments</h1>
+              {/* Card 2 */}
+              <div className="relative max-w-xs rounded-3xl shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 bg-transparent bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-[url('/media/bg3.jpg')] bg-cover bg-no-repeat group">
+                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  300+
+                </h1>
+                <div className="mt-16">
+                  <h1 className="text-3xl text-gray-700 font-semibold font-serif">
+                    Training videos and tutorials made by our experts.
+                  </h1>
+                </div>
+              </div>
 
-
-      </div>
-
+              {/* Card 3 */}
+              <div className="relative max-w-xs rounded-3xl shadow-lg p-6 w-80 md:w-96 border-4 border-gradient-to-r from-blue-500 to-purple-500 bg-transparent bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-[url('/media/bg3.jpg')] bg-cover bg-no-repeat group">
+                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">24/7</h1>
+                <div className="mt-16">
+                  <h1 className="text-3xl text-gray-700 font-semibold font-serif">
+                    Customer Support available for the members.
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section  className="bg-slate-200 bg-cover bg-center bg-no-repeat">
+      <section className="bg-slate-200 bg-cover bg-center bg-no-repeat">
         <div className="h-4 rounded-t-lg"></div>
         <h1 className="text-5xl text-center font-semibold">
           Top 4 Boxing Styles in the World
