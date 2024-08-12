@@ -11,6 +11,8 @@ const Home = () => {
     }, 2000); // Simulate a loading time of 2 seconds
 
     return () => clearTimeout(timer);
+
+    
   }, []);
 
   if (loading) {
