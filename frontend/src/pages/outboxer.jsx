@@ -11,10 +11,10 @@ const outboxer = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-       <header className="fixed top-0 left-0 w-full z-20 bg-gray-50 border-b border-gray-300">
+       <header className="absolute top-0 left-0 w-full z-20 ">
           <div className=" mx-auto flex items-center justify-between py-4">
             <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
-              Boxers Hub
+              Ring Warriors
             </h1>
             <div className="flex-1 flex justify-end space-x-10 pr-5">
               <Link
@@ -193,7 +193,7 @@ const outboxer = () => {
           </h1>
           <h1 className="font-sans hover:bg-blue-300 border  border-blue-800 rounded-xl text-pretty font-semibold text-xl flex justify-center text-center">
             For More Details and real life experience and training get our
-            premium membership. Download our app 'Boxers Hub' to get mastered in
+            premium membership. Download our app 'Ring Warriors' to get mastered in
             different boxing styles. <br /> In case of any query feel free to
             contact us.
           </h1>
