@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './header/header';
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
       <div className="bg-cover bg-center h-screen flex flex-col items-center justify-center" style={{ backgroundImage: `url('/media/b2.jpg')` }}>
+      <div>
+        <Header />
+       </div>
         <div className="text-center">
           <Link to="/Home">
             <h1 className="text-5xl text-white py-6">Boxers Hub</h1>

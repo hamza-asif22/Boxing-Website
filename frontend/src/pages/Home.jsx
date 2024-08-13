@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.css";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import VideoSlider from "../components/home/videoslide";
+import Header from "./header/header";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -14,8 +15,6 @@ const Home = () => {
     }, 2000); // Simulate a loading time of 2 seconds
 
     return () => clearTimeout(timer);
-
-    
   }, []);
 
   if (loading) {
@@ -29,10 +28,8 @@ const Home = () => {
     );
   }
 
-  
-
   return (
-     <div
+    <div
       className="min-h-screen bg-no-repeat bg-cover bg-fixed"
       style={{
         backgroundImage: "url('/media/bg1.jpg')",
@@ -40,91 +37,47 @@ const Home = () => {
       }}
     >
       <section className="relative h-screen overflow-hidden">
-        <header className="absolute top-0 left-0 w-full z-20 text-white ">
-          <div className=" mx-auto flex items-center justify-between py-4">
-            <h1 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-blue-400 to-pink-500 font-semibold hover:text-yellow-50 px-4 flex items-center">
-             <img
-                src="/media/boxing-ico.gif"
-                alt="Boxing Icon"
-                className="w-9 h-8 mr-2"
-              />
-              Ring Warriors
-            </h1>
-
-            <div className="flex-1 flex justify-center font-medium space-x-10 pr-5 bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-blue-400 to-pink-500 ">
-              <Link
-                to="/pricing"
-                className="text-lg hover:text-yellow-50 "
-              >
-                Training Program
-              </Link>
-              <Link
-                to="/trainers"
-                className="text-lg hover:text-yellow-50"
-              >
-                Trainers
-              </Link>
-              <Link
-                to="/contact"
-                className="text-lg hover:text-yellow-50 "
-              >
-                Contact Us
-              </Link>
-              
-            </div>
-            <div className="flex justify-end px-9 font-medium bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-blue-400 to-pink-500">
-              <Link
-                to="/login"
-                className="text-lg  hover:text-blue-700"
-              >
-                <button className=" rounded-lg py-1 px-3 hover:text-yellow-50">
-                Log In
-                </button>
-              </Link>
-              <Link
-                to="/signup"
-                className="text-lg  hover:text-blue-700"
-              >
-                <button className=" border-2 rounded-lg py-1 px-3 hover:text-yellow-50">
-                Register
-                </button>
-              </Link>
-              </div>
-          </div>
-        </header>
-<div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-  <div className="flex flex-row items-start justify-between w-full max-w-5xl px-4 mb-9">
-    <div className="flex flex-col flex-1">
-      <div className="mt-16"> {/* Add margin-top to lower the content */}
-        <h1 className="text-4xl py-4 font-bold mb-4 mt-20">
-          <i>Train Like a Champion</i>
-        </h1>
-        <p className="text-xl mb-6 mt-12">
-          Unlock your potential with expert boxing training and elevate your skills
-          to new heights in the ring. Join a community of champions dedicated to
-          success and experience the support and motivation needed to achieve your
-          goals. With top-notch coaching and a commitment to excellence, you're on
-          the path to becoming your best.
-        </p>
-        <div className="flex justify-start mt-16">
-          <a href="#2page">
-            <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom">
-              Check Out The Website
-              <img
-                src="/media/down-arr.gif"
-                alt="Down Arrow"
-                className="w-7 h-6 ml-2"
-              />
-            </button>
-          </a>
+        <div>
+          <Header />
         </div>
-      </div>
-    </div>
-    <img src="/media/page1.png" className="w-auto h-[500px] flex-shrink-0 mt-32" alt="Box" />
-  </div>
-</div>
-
-
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+          <div className="flex flex-row items-start justify-between w-full max-w-5xl px-4 mb-9">
+            <div className="flex flex-col flex-1">
+              <div className="mt-16">
+                {" "}
+                {/* Add margin-top to lower the content */}
+                <h1 className="text-4xl py-4 font-bold mb-4 mt-20">
+                  <i>Train Like a Champion</i>
+                </h1>
+                <p className="text-xl mb-6 mt-12">
+                  Unlock your potential with expert boxing training and elevate
+                  your skills to new heights in the ring. Join a community of
+                  champions dedicated to success and experience the support and
+                  motivation needed to achieve your goals. With top-notch
+                  coaching and a commitment to excellence, you're on the path to
+                  becoming your best.
+                </p>
+                <div className="flex justify-start mt-16">
+                  <a href="#2page">
+                    <button className="py-4 px-4 flex border-2 shadow-lg border-gradient-to-r bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom">
+                      Check Out The Website
+                      <img
+                        src="/media/down-arr.gif"
+                        alt="Down Arrow"
+                        className="w-7 h-6 ml-2"
+                      />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img
+              src="/media/page1.png"
+              className="w-auto h-[500px] flex-shrink-0 mt-32"
+              alt="Box"
+            />
+          </div>
+        </div>
       </section>
 
       <section
@@ -133,13 +86,18 @@ const Home = () => {
       >
         <div className="py-4 px-4 ">
           <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-red-500 px-9 py-8 leading-tight  text-center flex align-top justify-center">
-            <i>We are enhancing “YOUR„ experience through our team's accomplishments</i>
+            <i>
+              We are enhancing “YOUR„ experience through our team's
+              accomplishments
+            </i>
           </h1>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-5 text-center">
               {/* Card 1 */}
               <div className="relative max-w-xs rounded-3xl shadow-lg p-6 w-80 md:w-96 border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-transparent bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-[url('/media/black1.jpg')] bg-cover bg-no-repeat group">
-                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">16</h1>
+                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  16
+                </h1>
                 <div className="mt-16">
                   <h1 className="text-3xl text-gray-700 group-hover:text-white font-semibold font-serif">
                     World best Coaches and Ex Boxers are hired for our members.
@@ -161,7 +119,9 @@ const Home = () => {
 
               {/* Card 3 */}
               <div className="relative max-w-xs rounded-3xl shadow-lg p-6 w-80 md:w-96 border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-transparent bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-transform duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-[url('/media/black1.jpg')] bg-cover bg-no-repeat group">
-                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">24/7</h1>
+                <h1 className="font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  24/7
+                </h1>
                 <div className="mt-16">
                   <h1 className="text-3xl text-gray-700 font-semibold group-hover:text-white font-serif">
                     Customer Support available for the members.
@@ -233,10 +193,12 @@ const Home = () => {
       </section>
 
       <section className="mt-6 mb-8">
-      <h1 className="text-white font-semibold text-3xl text-center py-6"><i>Demo Videos</i></h1>
-      <div className="flex flex-row">
-       <VideoSlider />
-      </div>
+        <h1 className="text-white font-semibold text-3xl text-center py-6">
+          <i>Demo Videos</i>
+        </h1>
+        <div className="flex flex-row">
+          <VideoSlider />
+        </div>
       </section>
 
       <footer className="bg-gray-900 text-white">
