@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 
 const Trainers = () => {
@@ -281,10 +282,12 @@ const Trainers = () => {
           ))}
         </div>
       </div>
+      <Link to="/addmember">
       <div className="flex justify-center">
           <button className="bg-blue-400 py-2 px-2 mr-2 rounded-lg">Add Trainer</button>
           <button className="bg-blue-400 py-2 px-2 ml-2 rounded-lg">Edit Trainer</button>
       </div>
+      </Link>
     </div>
     </section>
   );
