@@ -15,6 +15,7 @@ import News from './pages/footer/news';
 import Trainers from './pages/trainers';
 import AddMember from './pages/addmember';
 import Scroll from './pages/styles/scroll';
+import RegisterForm from './pages/registerform';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/trainers" element={<Trainers />} />
         <Route path="/addmember" element={<AddMember />} />
         <Route path="/scroll" element={<Scroll />} />
+        <Route path="/registerform" element={<RegisterForm />} />
       </Routes>
   );
 };
