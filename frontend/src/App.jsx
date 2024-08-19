@@ -14,6 +14,7 @@ import Signup from './pages/signup';
 import News from './pages/footer/news';
 import Trainers from './pages/trainers';
 import AddMember from './pages/addmember';
+import Scroll from './pages/styles/scroll';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         { <Route path="/footer/news" element={<News />} /> }
         <Route path="/trainers" element={<Trainers />} />
         <Route path="/addmember" element={<AddMember />} />
+        <Route path="/scroll" element={<Scroll />} />
       </Routes>
   );
 };

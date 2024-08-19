@@ -3,9 +3,9 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link  } from "react-router-dom";
-
 import VideoSlider from "../components/home/videoslide";
 import Header from "./header/header";
+import Scroll from "./styles/scroll";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -59,14 +59,7 @@ const Home = () => {
                   becoming your best.
                 </p>
                 <div className="flex justify-start mt-16">
-                    <button className="py-4 px-4 scroll-behaviour:smooth flex border-2 shadow-lg border-gradient-to-r bg-transparent hover:bg-blue-200 relative rounded-3xl align-bottom">
-                      Check Out The Website
-                      <img
-                        src="/media/down-arr.gif"
-                        alt="Down Arrow"
-                        className="w-7 h-6 ml-2"
-                      />
-                    </button>
+                  <Scroll />
                 </div>
               </div>
             </div>
