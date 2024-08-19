@@ -1,16 +1,15 @@
 import React from "react";
 import CountrySelect from "./styles/country";
 
+
 const RegisterForm = () => {
 
   return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-        
-        <div className="max-w-4xl w-full space-y-8 bg-gray-700 p-10 rounded-2xl shadow-xl">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* General Information */}
-            <section>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full space-y-8 bg-gray-700 p-10 rounded-2xl shadow-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* General Information */}
+          <section>
             <div>
               <h3 className="text-3xl font-semibold mb-5 text-blue-600">
                 General Information
@@ -28,18 +27,22 @@ const RegisterForm = () => {
                 />
               </div>
               <div className="flex space-x-4">
-              <select className="block w-40 mt-4 mb-4 bg-gray-400 text-white py-1 px-2 rounded-lg border-transparent focus:border-blue-500 focus:bg-gray-500 focus:ring-0">
-              <option value=""disabled selected hidden>Gender</option>
-                <option value="2">Male</option>
-                <option value="3">Female</option>
-              </select>
-              <CountrySelect />
+                <select className="block w-40 mt-4 mb-4 bg-gray-400 text-white py-1 px-2 rounded-lg border-transparent focus:border-blue-500 focus:bg-gray-500 focus:ring-0">
+                  <option value="" disabled hidden>Gender</option>
+                  <option value="2">Male</option>
+                  <option value="3">Female</option>
+                </select>
+                <CountrySelect />
               </div>
+              <input
+                type="number"
+                placeholder="Age"
+                className="block w-20 px-4 py-1 rounded-lg bg-gray-400 text-white placeholder-white focus:border-black focus:ring-0"
+              />
             </div>
-            </section>
+          </section>
 
-
-            <section>
+          <section>
             {/* Contact Details */}
             <div className="bg-indigo-600 p-5 rounded-2xl text-white">
               <h3 className="text-3xl font-semibold mb-5">Contact Details</h3>
@@ -119,12 +122,11 @@ const RegisterForm = () => {
                 </button>
               </div>
             </div>
-            </section>
-            
-          </div>
+          </section>
+
         </div>
       </div>
-
+    </div>
   );
 };
 
