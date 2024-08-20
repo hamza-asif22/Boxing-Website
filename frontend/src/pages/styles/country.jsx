@@ -19,7 +19,7 @@ function CountrySelect() {
   ];
 
   return (
-    <select className="block w-40  mt-4 mb-4 bg-gray-400 text-white py-1 px-2 rounded-lg border-transparent focus:ring-0 focus:bg-gray-500 focus:text-white">
+    <select className="block w-40  mt-4 mb-4 bg-white text-gray-300 py-1 px-2 rounded-lg border-transparent focus:ring-0 focus:bg-gray-800 focus:text-white">
       <option value="" disabled selected hidden>Country</option>
       {countryCodes.map((code) => (
         <option key={code} value={code}>
@@ -31,3 +31,11 @@ function CountrySelect() {
 }
 
 export default CountrySelect;
+
+
+
+
+
+
+
+
