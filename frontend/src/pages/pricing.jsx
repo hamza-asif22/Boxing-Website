@@ -10,6 +10,7 @@ const books = [
 const Pricing = () => {
   return (
     <div className="flex flex-col items-center min-h-screen overflow-x-auto" style={{ backgroundImage: `url('/media/b3.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      
       <h1 className="text-white text-3xl text-pretty font-bold mt-8 mb-4">Choose Your Desired Membership Plan</h1>
       <div className="flex justify-center items-center flex-wrap py-8">
         {books.map((item) => (

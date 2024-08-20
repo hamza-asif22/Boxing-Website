@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegUser, FaLock } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const login = () => {
   return (
@@ -30,7 +31,13 @@ const login = () => {
           </label>
           <a href='#' className='text-sm text-blue-500 hover:underline'>Forgot Password?</a>
         </div>
-        <button type='submit' className='w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors'>Login</button>
+        <Link to="/profile">
+        <button type='submit' className='w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors'>
+          
+          Login
+          
+          </button>
+          </Link>
         <div className='mt-6 text-center'>
           <p className='text-sm'>Don't have an account? <a href='/signup' className='text-blue-500 hover:underline'>Register</a></p>
         </div>

@@ -13,6 +13,9 @@ import Login from './pages/login';
 import Signup from './pages/signup';
 import News from './pages/footer/news';
 import Trainers from './pages/trainers';
+import AddMember from './pages/addmember';
+import Scroll from './pages/styles/scroll';
+import RegisterForm from './pages/registerform';
 
 const App = () => {
   return (
@@ -30,6 +33,9 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         { <Route path="/footer/news" element={<News />} /> }
         <Route path="/trainers" element={<Trainers />} />
+        <Route path="/addmember" element={<AddMember />} />
+        <Route path="/scroll" element={<Scroll />} />
+        <Route path="/registerform" element={<RegisterForm />} />
       </Routes>
   );
 };

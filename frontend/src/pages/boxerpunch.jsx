@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from "react";
+import Header from "./header/header";
 
 const boxpunch = () => {
   return (
-    <div                
+    <div
       className="min-h-screen bg-teal-500 font-thin flex items-center justify-center text-black bg-cover bg-no-repeat bg-center"
       style={{
         backgroundImage: `url('/media/a8.jpg')`,
@@ -12,33 +12,9 @@ const boxpunch = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
- <header className="fixed top-0 left-0 w-full z-20 bg-gray-50 border-b border-gray-300">
-          <div className=" mx-auto flex items-center justify-between py-4">
-            <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
-              Boxers Hub
-            </h1>
-            <div className="flex-1 flex justify-end space-x-10 pr-5">
-              <Link
-                to="/login"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Profile
-              </Link>
-              <Link
-                to="/pricing"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Pricing
-              </Link>
-              <Link
-                to="/contact"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </header>
+      <div>
+        <Header />
+      </div>
       <div className="max-w-4xl mx-auto py-4">
         <h1 className="text-center font-serif font-bold italic text-2xl py-8">
           Box-Puncher Boxing Style
@@ -61,13 +37,13 @@ const boxpunch = () => {
             In our latest Focus on Fighting Styles, we will look more closely at
             the Out-Boxer style of fighting.
             <br />
-            <br /> Unlike the <u>swarmer style</u>, which almost boxer can learn, the
-            Out-Boxer style is limited to taller fighters. The style works most
-            effectively when a fighter has the reach advantage over their
-            opponent. The Out-Boxer also needs to have <u>great stamina, superior
-            footwork,</u> and a solid command of how to move around the ring. Let’s
-            take a closer look at the style, to understand why these components
-            are so essential.
+            <br /> Unlike the <u>swarmer style</u>, which almost boxer can
+            learn, the Out-Boxer style is limited to taller fighters. The style
+            works most effectively when a fighter has the reach advantage over
+            their opponent. The Out-Boxer also needs to have{" "}
+            <u>great stamina, superior footwork,</u> and a solid command of how
+            to move around the ring. Let’s take a closer look at the style, to
+            understand why these components are so essential.
           </p>
         </div>
         <div className="space-y-4">
@@ -148,10 +124,14 @@ const boxpunch = () => {
             If you find yourself in the ring with an Out-Boxer don’t try to hard
             to land blows to the head early on. You’re already going to have to
             work hard to close in. You shouldn’t double your work by trying to
-            also punch up.<br/><br/> Instead, <b>focus on the body</b>, which will also happen to
+            also punch up.
+            <br />
+            <br /> Instead, <b>focus on the body</b>, which will also happen to
             be the easiest part of your opponent’s body to reach (assuming that
             they are taller than you). Plus, slipping one’s entire torso away
-            from an incoming blow is far harder than just slipping the head.<br/><br/>
+            from an incoming blow is far harder than just slipping the head.
+            <br />
+            <br />
             More importantly, though, body shots hurt. The pain of multiple
             punches to the core will degrade a fighters ability to use their
             legs. And an Out-Boxer who can’t use their legs, is in trouble.{" "}
@@ -167,16 +147,17 @@ const boxpunch = () => {
               Remember to <b>avoid the clinch</b>. If you manage to corner your
               opponent, don’t get too aggressive and enter into grappling range.
               A taller boxer has the advantage in the clinch, because they can
-              wrap you up and force you to carry their weight.<br/><br/> <b>Medium range</b> will be your friend. You know you are in medium range
-              when you are close enough to land your punches, but not so close
-              that you can get wrapped up. At this range, your punches will have
-              their greatest effect, but your opponent will have a hard time
-              being effective with their jabs and crosses.
+              wrap you up and force you to carry their weight.
+              <br />
+              <br /> <b>Medium range</b> will be your friend. You know you are
+              in medium range when you are close enough to land your punches,
+              but not so close that you can get wrapped up. At this range, your
+              punches will have their greatest effect, but your opponent will
+              have a hard time being effective with their jabs and crosses.
             </p>
             <p className="col-span-3 text-2xl text-black mt-4">
-              Getting INTO medium range, may be easier said than done.
-              But when you achieve it, unload before your opponent dances away
-              again.
+              Getting INTO medium range, may be easier said than done. But when
+              you achieve it, unload before your opponent dances away again.
               <br />
               <br />
               <br />
@@ -202,6 +183,6 @@ const boxpunch = () => {
       </div>
     </div>
   );
-}
+};
 
 export default boxpunch;

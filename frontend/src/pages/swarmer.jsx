@@ -1,38 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./header/header";
 const Swarmer = () => {
   return (
     <div
       className="min-h-screen bg-teal-500 font-thin flex items-center justify-center text-black bg-cover bg-no-repeat bg-center"
       style={{ backgroundImage: `url('/media/a5.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
     >
-       <header className="fixed top-0 left-0 w-full z-20 bg-gray-50 border-b border-gray-300">
-          <div className=" mx-auto flex items-center justify-between py-4">
-            <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
-              Boxers Hub
-            </h1>
-            <div className="flex-1 flex justify-end space-x-10 pr-5">
-              <Link
-                to="/login"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Profile
-              </Link>
-              <Link
-                to="/pricing"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Pricing
-              </Link>
-              <Link
-                to="/contact"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </header>
+<div>
+        <Header />
+       </div>
       <div className="max-w-4xl mx-auto py-4">
         <h1 className="text-center font-serif font-bold italic text-2xl py-8">
           Swarmer Boxing Style
@@ -180,7 +157,7 @@ const Swarmer = () => {
             
             </h1>
           <h1 className="font-sans hover:bg-blue-300 border  border-blue-800 rounded-xl text-pretty font-semibold text-xl flex justify-center text-center">For More Details and real life experience and training get our 
-            premium membership. Download our app 'Boxers Hub' to get mastered in
+            premium membership. Download our app 'Ring Warriors' to get mastered in
             different boxing styles. <br /> In case of any query feel free to contact us.</h1>
         </div>
         

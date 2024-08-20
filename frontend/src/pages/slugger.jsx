@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./header/header";
 
 const slugger = () => {
   return (
@@ -12,33 +13,9 @@ const slugger = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
- <header className="fixed top-0 left-0 w-full z-20 bg-gray-50 border-b border-gray-300">
-          <div className=" mx-auto flex items-center justify-between py-4">
-            <h1 className="text-2xl text-blue-500 font-bold hover:text-blue-700 px-4">
-              Boxers Hub
-            </h1>
-            <div className="flex-1 flex justify-end space-x-10 pr-5">
-              <Link
-                to="/login"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Profile
-              </Link>
-              <Link
-                to="/pricing"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Pricing
-              </Link>
-              <Link
-                to="/contact"
-                className="text-lg text-blue-400 hover:text-blue-700"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </header>
+<div>
+        <Header />
+       </div>
       <div className="max-w-4xl mx-auto py-4">
         <h1 className="text-center font-serif font-bold italic text-2xl py-8">
           Slugger Boxing Style
