@@ -3,15 +3,20 @@ import { Link } from "react-router-dom";
 import Header from "./header/header";
 const Swarmer = () => {
   return (
-    <div
+    <div                
       className="min-h-screen bg-teal-500 font-thin flex items-center justify-center text-black bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: `url('/media/a5.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+      style={{
+        backgroundImage: `url('/media/a6.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
 <div>
         <Header />
        </div>
       <div className="max-w-4xl mx-auto py-4">
-        <h1 className="text-center font-serif font-bold italic text-2xl py-8">
+        <h1 className="text-center font-serif font-bold italic text-2xl py-12">
           Swarmer Boxing Style
         </h1>
         <div className="grid lg:grid-cols-3 gap-8 mb-8">

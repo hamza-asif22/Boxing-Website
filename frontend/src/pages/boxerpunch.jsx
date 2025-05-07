@@ -4,21 +4,25 @@ import Header from "./header/header";
 const boxpunch = () => {
   return (
     <div
-      className="min-h-screen bg-teal-500 font-thin flex items-center justify-center text-black bg-cover bg-no-repeat bg-center"
+      className="bg-teal-500 font-thin text-black bg-cover bg-no-repeat bg-center"
       style={{
-        backgroundImage: `url('/media/a8.jpg')`,
+        backgroundImage: `url('/media/a6.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div>
-        <Header />
-      </div>
+      {/* Keep the Header at the top */}
+      <Header />
+
+      {/* Main content area with padding */}
       <div className="max-w-4xl mx-auto py-4">
-        <h1 className="text-center font-serif font-bold italic text-2xl py-8">
+        {/* Section Title */}
+        <h1 className="text-center font-serif font-bold italic text-2xl py-12">
           Box-Puncher Boxing Style
         </h1>
+
+        {/* Box-Puncher Content */}
         <div className="grid lg:grid-cols-3 gap-8 mb-8">
           <img
             src="/media/c1.jpg"
@@ -46,6 +50,7 @@ const boxpunch = () => {
             understand why these components are so essential.
           </p>
         </div>
+
         <div className="space-y-4">
           <h1 className="font-bold flex justify-center text-2xl italic font-serif">
             The Out-Boxer Style: What it Looks Like
@@ -59,9 +64,8 @@ const boxpunch = () => {
             <img
               src="/media/c2.jpg"
               className="w-full col-span-1"
-              alt="Swarmer Image"
+              alt="Out-Boxer Style"
             />
-
             <p className="text-center text-2xl lg:text-left text-black col-span-2">
               An Out-Boxer has two primary means of managing position. The first
               uses agility and maneuverability to shift away from an opponent.
@@ -87,6 +91,7 @@ const boxpunch = () => {
             </p>
           </div>
 
+          {/* Additional sections */}
           <h1 className="font-bold flex justify-center text-2xl italic font-serif">
             The Out-Boxer Fighter: Why Fighters Choose It
           </h1>
@@ -98,13 +103,13 @@ const boxpunch = () => {
             not, lose if they get into a situation where they merely trade
             punches with an opponent.{" "}
           </p>
+
           <div className="grid lg:grid-cols-3 gap-8 mb-8">
             <img
               src="/media/c3.jpg"
               className="w-full col-span-1"
               alt="Swarmer"
             />
-
             <p className="text-center text-2xl lg:text-left text-black col-span-2">
               In order to overcome this strength imbalance, many taller boxers
               choose to keep their opponents at a distance. They trade their
@@ -117,6 +122,7 @@ const boxpunch = () => {
             </p>
           </div>
 
+          {/* Counter-Defense */}
           <h1 className="font-bold flex justify-center text-2xl italic font-serif">
             The Out-Boxer Counter: How Should You Defend It
           </h1>
@@ -136,13 +142,13 @@ const boxpunch = () => {
             punches to the core will degrade a fighters ability to use their
             legs. And an Out-Boxer who can’t use their legs, is in trouble.{" "}
           </p>
+
           <div className="grid lg:grid-cols-3 gap-8 mb-8">
             <img
               src="/media/c4.jpg"
               className="w-full col-span-1"
               alt="Swarmer"
             />
-
             <p className="text-center text-2xl lg:text-left text-black col-span-2">
               Remember to <b>avoid the clinch</b>. If you manage to corner your
               opponent, don’t get too aggressive and enter into grappling range.
@@ -163,6 +169,7 @@ const boxpunch = () => {
               <br />
             </p>
           </div>
+
           <h1>
             --------------------------------------------------------------------------------------------------------------------------------------------
           </h1>

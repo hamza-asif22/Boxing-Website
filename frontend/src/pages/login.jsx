@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRegUser, FaLock } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
+
 const login = () => {
   return (
     <div className='min-h-screen flex items-center justify-center bg-cover bg-center' style={{ backgroundImage: "url('/media/b6.jpg')" }}>
@@ -29,7 +30,9 @@ const login = () => {
           <label className='flex items-center text-sm'>
             <input type='checkbox' className='mr-2' /> Remember Me
           </label>
-          <a href='#' className='text-sm text-blue-500 hover:underline'>Forgot Password?</a>
+          
+            <span className='text-sm text-blue-500 hover:underline'>Forgot Password?</span>
+          
         </div>
         <Link to="/profile">
         <button type='submit' className='w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors'>

@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulate a loading time of 2 seconds
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -46,7 +46,7 @@ const Home = () => {
             <div className="flex flex-col flex-1">
               <div className="mt-16">
                 {" "}
-                {/* Add margin-top to lower the content */}
+                
                 <h1 className="text-4xl py-4 font-bold mb-4 mt-20">
                   <i>Train Like a Champion</i>
                 </h1>
